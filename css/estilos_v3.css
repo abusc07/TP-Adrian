@@ -67,11 +67,9 @@ header {
 }
 .header-logo {
     grid-area: logo-area;
-    color: yellow;
     justify-self: right;
     margin: 0.25rem 2vw 0.25rem 2vw;
 }
-
 
 /**************************************************************************************************/
 /* Main */
@@ -181,11 +179,11 @@ footer {
 /* .page-container >  main, */
 /*.page-container >  footer, */
 /* .page-container >  div, */
-.main-container >  div  { 
+/* .main-container >  div  { 
     background-color: darksalmon;
     padding: 20px;
     border-radius: 4px;
-}
+} */
 .maqueta-3cols {
     grid-column-start: span 3;
     grid-row-start: auto;

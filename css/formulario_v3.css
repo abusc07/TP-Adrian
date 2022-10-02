@@ -50,15 +50,14 @@
 }
 .whatsapp-container {
   grid-area: wapp-area;
+  text-align: center;
 }
 .whatsapp-container .whatsapp {
   border-radius: 0.3rem;
 }
 .whatsapp-container .nota {
-  text-align: center;
   font-style: italic;
   font-weight: 500;
-  /* font-size: larger; */
 }
 .form-containter {
   grid-area: form-area;
