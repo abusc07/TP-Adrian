@@ -1,0 +1,157 @@
+.page-container {
+  grid-row-gap: 0;
+}
+.main-container {
+  display: grid;
+  grid-template-columns: 58% 21% 21%;
+  grid-template-rows: auto;
+  grid-template-areas: "form-area side1-area side2-area"
+                       "form-area side1-area side3-area"
+                       "wapp-area wapp-area  wapp-area";
+  grid-auto-flow: row;
+  grid-row-gap: 1%;
+  grid-column-gap: 0.5%;
+  width: 98%;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+}
+.side1-container {
+  grid-area: side1-area;
+  font-family: 'Overpass';
+}
+.side2-container {
+  grid-area: side2-area;
+  font-family: 'Overpass';
+}
+.side3-container {
+  grid-area: side3-area;
+  font-family: 'Overpass';
+}
+.side1-container, .side2-container, .side3-container, .whatsapp-container, .form-containter {
+  background-color: #D5CEC2;
+  border: 1px solid rgba(149, 196, 247, 0.2); 
+  border-radius: 0.3rem;
+  padding: 1.8rem;
+  line-height: 150%;
+  margin: 0 auto;
+  width: 100%;
+}
+.side1-container h2, .side2-container h2, .side3-container h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: large;
+  width: 15rem;
+  border: 3px solid rgb(70, 70, 121);
+  border-radius: 0.3rem;
+  padding: 0.4rem;
+}
+.side1-container .list-type, .side2-container .list-type, .side3-container .list-type  {
+  list-style-type: square;
+}
+.whatsapp-container {
+  grid-area: wapp-area;
+}
+.whatsapp-container .whatsapp {
+  border-radius: 0.3rem;
+}
+.whatsapp-container .nota {
+  text-align: center;
+  font-style: italic;
+  font-weight: 500;
+  /* font-size: larger; */
+}
+.form-containter {
+  grid-area: form-area;
+  display: grid;
+  grid-template-columns:  49%  49%;
+  grid-auto-flow: row;
+  /* padding: 0.2rem; */
+}
+label  {
+  display: block;
+  font-family: 'Overpass';
+  font-size: 1.1rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+input,
+select,
+textarea {
+  border: 1px solid rgba(0, 123, 255, .2); 
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+}
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=tel]:focus,
+select:focus,
+textarea:focus {
+  outline: 3px solid rgb(70, 70, 121)
+}
+.form-containter div {
+  margin-bottom: 1rem;
+}
+.form-containter .check {
+  font-weight: 800;
+  grid-column-start: span 2;
+  margin-bottom: 2rem;
+}
+.form-containter .check-item {
+  margin: auto 0.5rem;
+}
+.form-containter .estado {
+  margin-top: 0.5rem;
+  width: 20vw;
+}
+.form-containter .botones {
+  border: none;
+  border-radius: 0.25vw;
+  color: white; 
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 0 1.8rem 0 0;
+  text-align: center;
+}
+input[type=submit] {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+input[type=submit]:hover {
+  background-color: rgba(0, 0, 0, 1);
+  cursor: pointer;
+}
+input[type=reset] {
+  background-color: rgba(230, 33, 66, 0.7);
+}
+input[type=reset]:hover {
+  background-color: rgba(230, 33, 66, 1);
+  cursor: pointer;
+}
+.form-containter .botones-area {
+  grid-column-start: 2;
+  grid-row-start: auto;
+  /* margin: auto auto; */
+  margin-bottom: 0;
+}
+@media screen and ((max-width: 575.98px) or (max-width: 991.98px)) {
+  .main-container {
+    grid-template-columns: 100%;
+    grid-template-areas:  "form-area" "wapp-area" "side1-area" "side2-area" "side3-area" ;
+    grid-row-gap: 1rem;
+    width: 98%;
+  }
+  .form-containter {
+    grid-template-columns: 98%;
+    grid-row-start: auto;
+  }
+  .form-containter .check {
+    grid-column-start: span 1;
+    grid-row-start: auto;
+  }
+  .form-containter .botones-area {
+    grid-column-start: 1;
+    grid-row-start: auto;
+  }
+  .whatsapp-container {
+    width: 100%;
+  }
+}
