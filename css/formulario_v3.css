@@ -179,6 +179,13 @@ textarea:focus {
   grid-column-start: span 2;
   margin-bottom: 2rem;
 }
+.form-containter .check-recuadro {
+   border: 3px solid rgb(70, 70, 121);
+   border-radius: 0.3rem;
+   padding: 0.5rem;
+   /* border: 10px solid black; 
+   text-decoration-line: underline ; */
+}
 .form-containter .check-item {
   margin: auto 0.5rem;
 }
