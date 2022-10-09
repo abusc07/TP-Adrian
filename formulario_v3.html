@@ -13,6 +13,8 @@
     <!-- Iconos de Font Awasome -->
     <script src="https://kit.fontawesome.com/a92a489a02.js" crossorigin="anonymous"></script>
 
+    <link rel="icon" type="image/vnd.microsoft.icon" href="img/favicon.ico" sizes="16x16 32x32">
+
     <!-- CSS  -->
     <link rel="stylesheet" href="css/estilos_v3.css">
     <link rel="stylesheet" href="css/formulario_v3.css">
@@ -23,23 +25,26 @@
 <body>
 
     <div class="page-container">
-    
+
         <header class="header-container header-fixed">
-            <div class="header-marca">Marca</div>
-            <div class="header-nav">
-                <a href="#" class="link-nav link-selected">Inicio</a>
-                <a href="#" class="link-nav">Tienda</a>
-                <a href="#" class="link-nav">Contacto</a>
+            <div class="header-marca">
+                <img src="img/marca-pequeña.png" alt="Maviris">
             </div>
-            <div class="header-logo"><img src="img/logo-negro.png" alt="logo"></div>
+            <div class="header-nav">
+                <a href="#" class="eigth before after">Inicio</a>
+                <a href="#" class="eigth before after">Mujeres</a>
+                <a href="#" class="eigth before after">Hombres</a>
+                <a href="formulario_v3.html" class="eigth before after">Contacto</a>
+            </div>
+            <div class="header-logo"><img src="img/logo-negro-intenso.png" alt="logo"></div>
         </header>
- 
+
         <main class="main-container">
 
-            
+
             <!-- <form class="main-container"  action="show-data.html" method="GET" target="_blank"> -->
             <form class="form-containter">
-        
+
                 <div class="check">
                     <label for="f_motivo" class="en_linea">Queres</label>
                     <input type="checkbox" name="f_motivo" value="Cons" id="f_motivo" tabindex="1" class="check-item">Consultar
@@ -53,25 +58,25 @@
                     <input type="text" name="f_nombre" id="f_nombre" tabindex="5" maxlength="50" size="35"
                            placeholder="Tu nombre" required>
                 </div>
-        
+
                 <div>
                     <label for="f_apellido">Apellido *</label>
                     <input type="text" name="f_apellido" id="f_apellido" tabindex="6" maxlength="50" size="35"
                            placeholder="Tu apellido" required>
                 </div>
-        
+
                 <div>
                     <label for="f_email">Email</label> <!-- Requerido solo por Newsletter -->
                     <input type="email" name="f_email" id="f_email" tabindex="7" maxlength="50"  size="30"
                            placeholder="Tu correo">
                 </div>
-        
+
                 <div>
                     <label for="f_celular">Celular</label> <!-- Requerido si no ingreso mail  -->
                     <input type="tel" name="f_celular" id="f_celular" tabindex="8" maxlength="15"  size="30"
                            placeholder="Tu celular">
                 </div>
-        
+
                 <div>
                     <label for="f_direccion">Dirección</label>
                     <input type="text" name="f_direccion" id="f_direccion" tabindex="9" maxlength="50" size="35"
@@ -110,13 +115,13 @@
                     <textarea name="f_mensaje" id="f_mensaje" tabindex="11" maxlength="500" cols="45" rows="4"
                               placeholder="Tu mensaje"></textarea>
                 </div>
-        
+
                 <div class="botones-area">
                     <input type="submit" value="Confirmar" tabindex="12" class="botones">
                     <input type="reset" value="Limpiar" tabindex="13" class="botones">
                 </div>
             </form>
-             
+
             <div class="whatsapp-container">
                 <!-- # 584242115766 -->
                 <a href="https://api.whatsapp.com/send?phone=&text=%F0%9F%91%8B%20Hola%20%E2%80%A2%F0%9D%90%8C%F0%9D%90%80%F0%9D%90%95%F0%9D%90%88%F0%9D%90%91%F0%9D%90%88%F0%9D%90%92%E2%80%A2%20%0ADeseo%20saber%20informaci%C3%B3n%20de%20lo%20siguiente" target="_blank">
@@ -129,13 +134,13 @@
                 <h2>Proceso de Compra</h2>
                 <br>
                 <ul class="list-type">
-                    <li>Somos tienda online en Venezuela, Edo. Miranda</li>
-                    <li>Comunicate por el link de Whatsapp o vía DM</li>
-                    <li>Envianos una captura de las prendas que te interesen y comentanos tus dudas</li>
-                    <li>Te confirmaremos disponibilidad y precio para definir tu forma de pago, método y fecha de entrega</li>
+                    <li><span class="list-item">Somos tienda online en Venezuela, Edo. Miranda</span></li>
+                    <li><span class="list-item">Comunicate por el link de Whatsapp o vía DM</span></li>
+                    <li><span class="list-item">Envianos una captura de las prendas que te interesen y comentanos tus dudas</span></li>
+                    <li><span class="list-item">Te confirmaremos disponibilidad y precio para definir tu forma de pago, método y fecha de entrega</span></li>
                     <!-- <li>Una vez concretada tu orden, deberas llenar un pequeño formulario con tus datos para lograr el envío satisfactoriamente</li> -->
-                    <li>Aceptamos cambios únicamente por talla, no hacemos devoluciones</li>
-                    <li>Horario fijo de atención al cliente de 8am a 9pm</li>
+                    <li><span class="list-item">Aceptamos cambios únicamente por talla, no hacemos devoluciones</span></li>
+                    <li><span class="list-item">Horario fijo de atención al cliente de 8 am a 9 pm</span></li>
                 </ul>
             </div>
 
@@ -143,9 +148,9 @@
                 <h2>Entregas</h2>
                 <br>
                 <ul class="list-type">
-                    <li>Pick Up (Guatire)</li>
-                    <li>Delivery (Ccs, Guatire y Guarenas)</li>
-                    <li>Envíos Nacionales (MRW y Tealca)</li>
+                    <li><span class="list-item">Pick Up (Guatire)</span></li>
+                    <li><span class="list-item">Delivery (Ccs, Guatire y Guarenas)</span></li>
+                    <li><span class="list-item">Envíos Nacionales (MRW y Tealca)</span></li>
                 </ul>
             </div>
 
@@ -153,10 +158,10 @@
                 <h2>Pagos</h2>
                 <br>
                 <ul class="list-type">
-                    <li>$ Efectivo</li>
-                    <li>Pago Móvil</li>
-                    <li>Binance</li>
-                    <li>Zelle</li>
+                    <li><span class="list-item">$ Efectivo</span></li>
+                    <li><span class="list-item">Pago Móvil</span></li>
+                    <li><span class="list-item">Binance</span></li>
+                    <li><span class="list-item">Zelle</span></li>
                 </ul>
             </div>
         </main>
